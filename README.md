@@ -31,10 +31,10 @@ Utilizing the concepts of stacks and LIFO (Last In, First Out), this repository 
 
 | File Name | Description |
 | --- | --- |
-|[monty.h] (https://github.com/Alouie412/monty/blob/master/monty.h) | Header file. Contains libraries, structs, and function prototypes |
-|[start_here.c] (https://github.com/Alouie412/monty/blob/master/start_here.c) | Main file that runs first. Checks for valid .m file |
-|[read_file.c] (https://github.com/Alouie412/monty/blob/master/read_file.c) | File after main file. Checks if file is readable |
-|[line_interpreter.c] (https://github.com/Alouie412/monty/blob/master/line_interpreter.c) | File that parses through lines and runs respective functions depending on command |
-|[push_to_stack.c] (https://github.com/Alouie412/monty/blob/master/push_to_stack.c) | File that handles the ```push``` command |
-|[print_stack.c] (https://github.com/Alouie412/monty/blob/master/print_stack.c) | File that handles the ```pall``` command |
-|[print_int.c] (https://github.com/Alouie412/monty/blob/master/print_int.c) | File that handles the ```pint``` command |
+|[monty.h](https://github.com/Alouie412/monty/blob/master/monty.h) | Header file. Contains libraries, structs, and function prototypes |
+|[start_here.c](https://github.com/Alouie412/monty/blob/master/start_here.c) | Main file that runs first. Checks for valid .m file |
+|[read_file.c](https://github.com/Alouie412/monty/blob/master/read_file.c) | File after main file. Checks if file is readable |
+|[line_interpreter.c](https://github.com/Alouie412/monty/blob/master/line_interpreter.c) | File that parses through lines and runs respective functions depending on command |
+|[push_to_stack.c](https://github.com/Alouie412/monty/blob/master/push_to_stack.c) | File that handles the ```push``` command |
+|[print_stack.c](https://github.com/Alouie412/monty/blob/master/print_stack.c) | File that handles the ```pall``` command |
+|[print_int.c](https://github.com/Alouie412/monty/blob/master/print_int.c) | File that handles the ```pint``` command |
