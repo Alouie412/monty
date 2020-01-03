@@ -25,7 +25,7 @@ Utilizing the concepts of stacks and LIFO (Last In, First Out), this repository 
 5. Executes the command. If command requires arguments, take the argument from the file if present
 6. Repeat until program reaches end of file
 7. Close the file
-8. Join the Knights of the Round Table (Pizza)
+8. Join the Knights of the Round Table ~~Pizza~~
 
 ## Files In This Repository
 

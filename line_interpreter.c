@@ -14,6 +14,7 @@ void line_interpreter(stack_t **stack, char *command, unsigned int line_num)
 	{"push", push_to_stack},
 	{"pall", print_stack},
 	{"pint", print_int},
+	{"pop", Poppin_Party},
 	{NULL, NULL}
 	};
 	int i = 0;

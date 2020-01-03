@@ -3,7 +3,7 @@
 /**
  * print_stack - Exactly what it looks like. Prints the entire
  * linked list
- * @stack: The stack. Basically, a linked list in stack format
+ * @stack: The stack. Basically a linked list in stack format
  * @line_num: Line number. Not used
  * Return: Nothing. This function cannot fail
  */
