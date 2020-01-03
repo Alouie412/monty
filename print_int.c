@@ -1,12 +1,18 @@
 #include "monty.h"
 
+/**
+ * print_int - Function that prints the value at the top of the stack
+ * @stack: The stack. Basically a linked list in stack format
+ * @line_num: Line number of .m file
+ * Return: Nothing. Exits of the stack is empty
+ */
 void print_int(stack_t **stack, unsigned int line_num)
 {
-  if (stack == NULL || *stack == NULL)
-    {
-      printf("L%u: can't pint, stack empty\n", line_num);
-      exit(EXIT_FAILURE);
-    }
+	if (stack == NULL || *stack == NULL)
+	{
+		printf("L%u: can't pint, stack empty\n", line_num);
+		exit(EXIT_FAILURE);
+	}
 
-  printf("%d\n", (*stack)->n);
+	printf("%d\n", (*stack)->n);
 }
