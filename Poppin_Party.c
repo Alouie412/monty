@@ -9,15 +9,15 @@
  */
 void Poppin_Party(stack_t **stack, unsigned int line_num)
 {
-  stack_t *Kasumeme;
+	stack_t *Kasumi;
 
-  if (stack == NULL || *stack == NULL)
-    {
-      printf("L%u: can't pop an empty stack\n", line_num);
-      exit(EXIT_FAILURE);
-    }
+	if (stack == NULL || *stack == NULL)
+	{
+		printf("L%u: can't pop an empty stack\n", line_num);
+		exit(EXIT_FAILURE);
+	}
 
-  Kasumeme = *stack;
-  *stack = (*stack)->next;
-  free(Kasumeme);
+	Kasumi = *stack;
+	*stack = (*stack)->next;
+	free(Kasumi);
 }
