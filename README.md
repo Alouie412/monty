@@ -38,6 +38,7 @@ Utilizing the concepts of stacks and LIFO (Last In, First Out), this repository 
 |[push_to_stack.c](https://github.com/Alouie412/monty/blob/master/push_to_stack.c) | File that handles the ```push``` command |
 |[print_stack.c](https://github.com/Alouie412/monty/blob/master/print_stack.c) | File that handles the ```pall``` command |
 |[print_int.c](https://github.com/Alouie412/monty/blob/master/print_int.c) | File that handles the ```pint``` command |
+|[Poppin_Party.c](https://github.com/Alouie412/monty/blob/master/Poppin_Party.c) | File that handles the ```pop``` command |
 
 ## Opcode Commands
 
@@ -46,3 +47,4 @@ Utilizing the concepts of stacks and LIFO (Last In, First Out), this repository 
 | push <int> | Pushes an element to the stack, if the element contains a valid integer |
 | pall | Prints all values on the stack. Prints in reverse as stacks function on LIFO (Last In, First Out) |
 | pint | Prints the value at the top of the stack, then a newline |
+| pop | After creating a stack, removes the topmost element in the stack. |
