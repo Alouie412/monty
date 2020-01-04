@@ -1,9 +1,6 @@
 #include "monty.h"
 
-/**
- * Our one and only global variable, as allowed by the instructions
- */
-stack_t **global_head;
+extern stack_t **global_head;
 
 /**
  * main - The driver function. Start here to begin the program

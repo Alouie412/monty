@@ -3,6 +3,7 @@
 /**
  * read_file - Function that determines if a file can be opened and read
  * @file_name: The name of the file passed in from start_here.c
+ * @head: The beginning of the linked list, passed into the global variable
  * Return: Nothing. Exits if file cannot be opened
  */
 void read_file(char *file_name, stack_t **head)

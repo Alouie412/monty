@@ -6,7 +6,7 @@
  * first top element
  * @stack: The stack. Basically a linked list in stack format
  * @line_num: Line number in .m file
- * Return: Nothing. Exists if less than two elements are in the stack
+ * Return: Nothing. Exits if less than two elements are in the stack
  */
 void subtraction(stack_t **stack, unsigned int line_num)
 {
