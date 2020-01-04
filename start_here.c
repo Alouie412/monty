@@ -1,6 +1,11 @@
 #include "monty.h"
 
 /**
+ * Our one and only global variable, as allowed by the instructions
+ */
+stack_t **global_head;
+
+/**
  * main - The driver function. Start here to begin the program
  * @argc: Number of arguments passed in
  * @argv: Arguments stored in each index
@@ -9,6 +14,8 @@
  */
 int main(int argc, char *argv[])
 {
+	stack_t *head = NULL;
+
 	/**
 	 * Unlike previous projects, this project's instructions
 	 * specifically state only 1 argument allowed. No more, no less
@@ -19,10 +26,11 @@ int main(int argc, char *argv[])
 		exit(EXIT_FAILURE);
 	}
 
+	global_head = &head;
 	/**
 	 * Go to read_file.c
 	 */
-	read_file(argv[1]);
-
-	return (EXIT_SUCCESS);
+	read_file(argv[1], &head);
+	atexit(free_them_all);
+	exit(EXIT_SUCCESS);
 }

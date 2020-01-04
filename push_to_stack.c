@@ -22,6 +22,7 @@ void push_to_stack(stack_t **stack, unsigned int line_num)
 	if (integer == NULL || isdigit(*integer) == 0)
 	{
 		printf("L%u: usage: push integer\n", line_num);
+		atexit(free_them_all);
 		exit(EXIT_FAILURE);
 	}
 

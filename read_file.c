@@ -5,10 +5,9 @@
  * @file_name: The name of the file passed in from start_here.c
  * Return: Nothing. Exits if file cannot be opened
  */
-void read_file(char *file_name)
+void read_file(char *file_name, stack_t **head)
 {
 	FILE *fp;
-	stack_t *head;
 	char *command = NULL;
 	size_t len = 0;
 	int string;
@@ -21,18 +20,15 @@ void read_file(char *file_name)
 		exit(EXIT_FAILURE);
 	}
 
-	head = NULL;
-
 	while ((string = getline(&command, &len, fp)) != -1)
 	{
 		command = strtok(command, DELIMIT);
 		count++;
 
 		if (command != NULL)
-			line_interpreter(&head, command, count);
+			line_interpreter(head, command, count);
 	}
 
-	free(head);
-	head = NULL;
+	free(command);
 	fclose(fp);
 }

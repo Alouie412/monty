@@ -11,6 +11,7 @@ void print_int(stack_t **stack, unsigned int line_num)
 	if (stack == NULL || *stack == NULL)
 	{
 		printf("L%u: can't pint, stack empty\n", line_num);
+		atexit(free_them_all);
 		exit(EXIT_FAILURE);
 	}
 
