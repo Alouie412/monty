@@ -43,6 +43,11 @@ Utilizing the concepts of stacks and LIFO (Last In, First Out), this repository 
 |[addition.c](https://github.com/Alouie412/monty/blob/master/addition.c) | File that handles the ```add``` command |
 |[nope.c](https://github.com/Alouie412/monty/blob/master/nope.c) | File that handles the ```nop``` command |
 |[subtraction.c](https://github.com/Alouie412/monty/blob/master/subtraction.c) | File that handles the ```sub``` command |
+|[division.c](https://github.com/Alouie412/monty/blob/master/division.c) | File that handles the ```div``` command |
+|[multiplcation.c](https://github.com/Alouie412/monty/blob/master/multiplication.c) | File that handles the ```mul``` command |
+|[modulo_op.c](https://github.com/Alouie412/monty/blob/master/modulo_op.c) | File that handles the ```mod``` command |
+|[print_char.c](https://github.com/Alouie412/monty/blob/master/print_char.c) | File that handles the ```pchar``` command |
+|[print_string.c](https://github.com/Alouie412/monty/blob/master/print_string.c) | File that handles the ```pstr``` command |
 
 ## Opcode Commands
 
@@ -50,9 +55,14 @@ Utilizing the concepts of stacks and LIFO (Last In, First Out), this repository 
 | --- | --- |
 | push <int> | Pushes an element to the stack, if the element contains a valid integer |
 | pall | Prints all values on the stack. Prints in reverse as stacks function on LIFO (Last In, First Out) |
-| pint | Prints the value at the top of the stack, then a newline |
+| pint | Prints the value at the top of the stack, then a newline. |
 | pop | Removes the topmost element in the stack. |
 | swap | Have the top and second-from-top element trade places. |
 | add | Adds the top element's integer value to the second-from-top element, then removes the top element from the stack. |
-| nop | Does absolutely nothing |
+| nop | Does absolutely nothing. Yep. |
 | sub | Subtracts the top element's integer value from the second-from-top element, then removes the top element from the stack. |
+| div | Divides the top element's integer value from the second-from-top element, then removes the top element from the stack. |
+| mul | Multiplies the top element's integer value with the second-from-top element, then removes the top element from the stack. |
+| mod | Divides the top element's integer value from the second-from-top element to get the remainder, then removes the top element from the stack. |
+| pchar | Prints the value of the top stack as a character. |
+| pstr | Prints all values of the stack as characters. |
