@@ -39,6 +39,10 @@ Utilizing the concepts of stacks and LIFO (Last In, First Out), this repository 
 |[print_stack.c](https://github.com/Alouie412/monty/blob/master/print_stack.c) | File that handles the ```pall``` command |
 |[print_int.c](https://github.com/Alouie412/monty/blob/master/print_int.c) | File that handles the ```pint``` command |
 |[Poppin_Party.c](https://github.com/Alouie412/monty/blob/master/Poppin_Party.c) | File that handles the ```pop``` command |
+|[swap.c](https://github.com/Alouie412/monty/blob/master/swap.c) | File that handles the ```swap``` command |
+|[addition.c](https://github.com/Alouie412/monty/blob/master/addition.c) | File that handles the ```add``` command |
+|[nope.c](https://github.com/Alouie412/monty/blob/master/nope.c) | File that handles the ```nop``` command |
+|[subtraction.c](https://github.com/Alouie412/monty/blob/master/subtraction.c) | File that handles the ```sub``` command |
 
 ## Opcode Commands
 
@@ -47,4 +51,8 @@ Utilizing the concepts of stacks and LIFO (Last In, First Out), this repository 
 | push <int> | Pushes an element to the stack, if the element contains a valid integer |
 | pall | Prints all values on the stack. Prints in reverse as stacks function on LIFO (Last In, First Out) |
 | pint | Prints the value at the top of the stack, then a newline |
-| pop | After creating a stack, removes the topmost element in the stack. |
+| pop | Removes the topmost element in the stack. |
+| swap | Have the top and second-from-top element trade places. |
+| add | Adds the top element's integer value to the second-from-top element, then removes the top element from the stack. |
+| nop | Does absolutely nothing |
+| sub | Subtracts the top element's integer value from the second-from-top element, then removes the top element from the stack. |
