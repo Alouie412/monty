@@ -22,6 +22,7 @@ void line_interpreter(stack_t **stack, char *command, unsigned int line_num)
 	{"div", division},
 	{"mul", multiplication},
 	{"mod", modulo_op},
+	{"#", nope},
 	{"pchar", print_char},
 	{"pstr", print_string},
 	{NULL, NULL}

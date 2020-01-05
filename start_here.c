@@ -26,6 +26,6 @@ int main(int argc, char *argv[])
 	 */
 	global_head = &head;
 	read_file(argv[1], &head);
-
+	atexit(free_them_all);
 	exit(EXIT_SUCCESS);
 }
