@@ -22,6 +22,7 @@ void line_interpreter(stack_t **stack, char *command, unsigned int line_num)
 	{"div", division},
 	{"mul", multiplication},
 	{"mod", modulo_op},
+	{"#", nope},
 	{"pchar", print_char},
 	{"pstr", print_string},
 	{NULL, NULL}
@@ -38,9 +39,9 @@ void line_interpreter(stack_t **stack, char *command, unsigned int line_num)
 		i++;
 	}
 
-	if (strlen(command) != 0 && command[0] == '#')
+	if (strlen(command) != 0)
 	{
-		printf("L%u: unknown instruction %s", line_num, command);
+		fprintf(STDERR_FILENO, "L%u: unknown instruction %s", line_num, command);
 		exit(EXIT_FAILURE);
 	}
 }

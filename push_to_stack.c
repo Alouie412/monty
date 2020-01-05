@@ -21,7 +21,7 @@ void push_to_stack(stack_t **stack, unsigned int line_num)
 	integer = strtok(NULL, DELIMIT);
 	if (integer == NULL || isdigit(*integer) == 0)
 	{
-		printf("L%u: usage: push integer\n", line_num);
+		fprintf(STDERR_FILENO, "L%u: usage: push integer\n", line_num);
 		atexit(free_them_all);
 		exit(EXIT_FAILURE);
 	}
@@ -29,7 +29,7 @@ void push_to_stack(stack_t **stack, unsigned int line_num)
 	new_node = malloc(sizeof(stack_t));
 	if (new_node == NULL)
 	{
-		printf("Error: malloc failed\n");
+		fprintf(STDERR_FILENO, "Error: malloc failed\n");
 		exit(EXIT_FAILURE);
 	}
 

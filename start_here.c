@@ -17,14 +17,14 @@ int main(int argc, char *argv[])
 	 */
 	if (argc != 2)
 	{
-		printf("USAGE: monty file\n");
+		fprintf(STDERR_FILENO, "USAGE: monty file\n");
 		exit(EXIT_FAILURE);
 	}
 
-	global_head = &head;
 	/**
-	 * Go to read_file.c
+	 * global_head is a global variable. It is declared in monty.h
 	 */
+	global_head = &head;
 	read_file(argv[1], &head);
 	atexit(free_them_all);
 	exit(EXIT_SUCCESS);

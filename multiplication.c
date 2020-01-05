@@ -14,7 +14,7 @@ void multiplication(stack_t **stack, unsigned int line_num)
 
 	if (stack == NULL || *stack == NULL || (*stack)->next == NULL)
 	{
-		printf("L%u: can't mul, stack too short\n", line_num);
+		fprintf(STDERR_FILENO, "L%u: can't mul, stack too short\n", line_num);
 		atexit(free_them_all);
 		exit(EXIT_FAILURE);
 	}

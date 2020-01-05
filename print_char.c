@@ -11,14 +11,14 @@ void print_char(stack_t **stack, unsigned int line_num)
 {
 	if (stack == NULL || *stack == NULL)
 	{
-		printf("L%u: can't pchar, stack empty", line_num);
+		fprintf(STDERR_FILENO, "L%u: can't pchar, stack empty", line_num);
 		atexit(free_them_all);
 		exit(EXIT_FAILURE);
 	}
 
 	if ((*stack)->n < 0 || (*stack)->n > 127)
 	{
-		printf("L%u: can't pchar, value out of range\n", line_num);
+		fprintf(STDERR_FILENO, "L%u: can't pchar, value out of range\n", line_num);
 		atexit(free_them_all);
 		exit(EXIT_FAILURE);
 	}
