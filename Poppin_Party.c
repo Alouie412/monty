@@ -13,7 +13,7 @@ void Poppin_Party(stack_t **stack, unsigned int line_num)
 
 	if (stack == NULL || *stack == NULL)
 	{
-		printf("L%u: can't pop an empty stack\n", line_num);
+		dprintf(STDERR_FILENO, "L%u: can't pop an empty stack\n", line_num);
 		exit(EXIT_FAILURE);
 	}
 

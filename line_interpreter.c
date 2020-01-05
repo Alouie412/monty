@@ -41,7 +41,7 @@ void line_interpreter(stack_t **stack, char *command, unsigned int line_num)
 
 	if (strlen(command) != 0)
 	{
-		fprintf(STDERR_FILENO, "L%u: unknown instruction %s", line_num, command);
+		dprintf(STDERR_FILENO, "L%u: unknown instruction %s", line_num, command);
 		exit(EXIT_FAILURE);
 	}
 }

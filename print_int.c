@@ -10,7 +10,7 @@ void print_int(stack_t **stack, unsigned int line_num)
 {
 	if (stack == NULL || *stack == NULL)
 	{
-		fprintf(STDERR_FILENO, "L%u: can't pint, stack empty\n", line_num);
+		dprintf(STDERR_FILENO, "L%u: can't pint, stack empty\n", line_num);
 		atexit(free_them_all);
 		exit(EXIT_FAILURE);
 	}
