@@ -45,7 +45,7 @@ typedef struct instruction_s
   void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-extern stack_t **global_head;
+stack_t **global_head;
 void read_file(char *, stack_t **);
 void line_interpreter(stack_t **, char *, unsigned int);
 void free_them_all(void);

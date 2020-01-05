@@ -1,7 +1,5 @@
 #include "monty.h"
 
-stack_t **global_head;
-
 /**
  * main - The driver function. Start here to begin the program
  * @argc: Number of arguments passed in
