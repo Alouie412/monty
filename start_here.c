@@ -1,6 +1,6 @@
 #include "monty.h"
 
-extern stack_t **global_head;
+stack_t **global_head;
 
 /**
  * main - The driver function. Start here to begin the program
