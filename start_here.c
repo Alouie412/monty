@@ -27,5 +27,5 @@ int main(int argc, char *argv[])
 	 */
 	read_file(argv[1], &head);
 	atexit(free_them_all);
-	return (EXIT_SUCCESS);
+	exit(EXIT_SUCCESS);
 }

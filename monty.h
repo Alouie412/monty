@@ -63,12 +63,4 @@ void modulo_op(stack_t **, unsigned int);
 void print_char(stack_t **, unsigned int);
 void print_string(stack_t **, unsigned int);
 
-/**
-void division(stack_t **, unsigned int);
-void multiplication(stack_t **, unsigned int);
-void modulus(stack_t **, unsigned int);
-void print_char(stack_t **, unsigned int);
-void print_string(stack_t **, unsigned int);
-
-*/
 #endif
