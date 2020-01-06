@@ -9,7 +9,7 @@ Utilizing the concepts of stacks and LIFO (Last In, First Out), this repository 
 * Opens .m file (the standard extension, though not mandatory by Monty)
 * Parses through lines in the given .m file
 * Produces outputs depending on file content
-* **Bonus** Includes code for Brainfuck
+* **_Bonus_** Includes code utilizing Brainfuck
 
 ## Requirements
 
