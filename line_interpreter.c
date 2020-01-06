@@ -42,7 +42,7 @@ void line_interpreter(stack_t **stack, char *command, unsigned int line_num)
 
 	if (strlen(command) != 0 && command[0] != '#')
 	{
-		dprintf(STDERR_FILENO, "L%u: unknown instruction %s", line_num, command);
+		dprintf(STDERR_FILENO, "L%u: unknown instruction %s\n", line_num, command);
 		free(command);
 		exit(EXIT_FAILURE);
 	}
