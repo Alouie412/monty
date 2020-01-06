@@ -8,14 +8,15 @@ Utilizing the concepts of stacks and LIFO (Last In, First Out), this repository 
 
 * Opens .m file (the standard extension, though not mandatory by Monty)
 * Parses through lines in the given .m file
-* Produces outputs depending on file content
+* Runs certain functions depending on command given, or display an error
+* Produces outputs depending on file content, if possible
 * **_Bonus_** Includes code utilizing Brainfuck
 
 ## Requirements
 
-* Contain the header file monty.h
-* Compile with ```gcc -Wall -Werror -Wextra -pedantic *.c -o monty```
-* Rebel against the Checker and all of its absurd demands
+* Contain the header file monty.h. Include guard it
+* Compile with ```gcc -Wall -Werror -Wextra -pedantic *.c -o monty``` on gcc 4.8.4
+* Rebel against Betty and The Checker and all of their absurd demands
 
 ## What The Interpreter Does
 
