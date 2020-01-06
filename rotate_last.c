@@ -1,5 +1,12 @@
 #include "monty.h"
 
+/**
+ * rotate_last - Function that moves the first element in the stack
+ * to the bottom
+ * @stack: The stack. Basically a linked list in stack format
+ * @line_num: Line number in .m file
+ * Return: Nothing. Exits if stack contains less than 2 elements
+ */
 void rotate_last(stack_t **stack, unsigned int line_num)
 {
 	stack_t *new_last = *stack;

@@ -63,5 +63,6 @@ void modulo_op(stack_t **, unsigned int);
 void print_char(stack_t **, unsigned int);
 void print_string(stack_t **, unsigned int);
 void rotate_last(stack_t **, unsigned int);
+void rotate_first(stack_t **, unsigned int);
 
 #endif

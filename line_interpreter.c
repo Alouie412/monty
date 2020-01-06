@@ -22,10 +22,10 @@ void line_interpreter(stack_t **stack, char *command, unsigned int line_num)
 	{"div", division},
 	{"mul", multiplication},
 	{"mod", modulo_op},
-	{"#", nope},
 	{"pchar", print_char},
 	{"pstr", print_string},
 	{"rotl", rotate_last},
+	{"rotr", rotate_first},
 	{NULL, NULL}
 	};
 	int i = 0;
