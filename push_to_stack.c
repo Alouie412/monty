@@ -15,7 +15,7 @@ int digit_checker(char *s)
 		if (s[0] == '-')
 			continue;
 
-		if (isdigit(s[i]) != 0)
+		if (isdigit(s[i]) == 0)
 			return (-1);
 	}
 
