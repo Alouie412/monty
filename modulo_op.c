@@ -15,7 +15,7 @@ void modulo_op(stack_t **stack, unsigned int line_num)
 
 	if (stack == NULL || *stack == NULL || (*stack)->next == NULL)
 	{
-		dprintf(STDERR_FILENO, "L%u: can't div, stack too short\n", line_num);
+		dprintf(STDERR_FILENO, "L%u: can't mod, stack too short\n", line_num);
 		atexit(free_them_all);
 		exit(EXIT_FAILURE);
 	}
