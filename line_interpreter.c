@@ -25,6 +25,7 @@ void line_interpreter(stack_t **stack, char *command, unsigned int line_num)
 	{"#", nope},
 	{"pchar", print_char},
 	{"pstr", print_string},
+	{"rotl", rotate_last},
 	{NULL, NULL}
 	};
 	int i = 0;
