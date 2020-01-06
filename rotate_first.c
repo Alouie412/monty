@@ -19,7 +19,7 @@ void rotate_first(stack_t **stack, unsigned int line_num)
 		new_first = new_first->next;
 
 	new_first->next = *stack;
-	(*stack)->prev = new;
+	(*stack)->prev = new_first;
 	new_first->prev = NULL;
 	new_first = (*stack)->next;
 	new_first->next = NULL;
