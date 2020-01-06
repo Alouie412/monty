@@ -19,7 +19,6 @@ void push_to_stack(stack_t **stack, unsigned int line_num)
 	 * in read_file.c, and the static pointer has not changed since
 	 */
 	integer = strtok(NULL, DELIMIT);
-	printf("Integer is %s\n", integer);
 	if (integer == NULL || isdigit(*integer) == 0)
 	{
 		dprintf(STDERR_FILENO, "L%u: usage: push integer\n", line_num);
