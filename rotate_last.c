@@ -5,6 +5,9 @@ void rotate_last(stack_t **stack, unsigned int line_num)
 	stack_t *new_last = *stack;
 	(void) line_num;
 
+	if (stack == NULL || *stack == NULL || (*stack)->next == NULL)
+		return;
+
 	while (new_last->next != NULL)
 		new_last = new_last->next;
 
