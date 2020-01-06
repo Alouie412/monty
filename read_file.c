@@ -10,7 +10,6 @@ void read_file(char *file_name, stack_t **head)
 {
 	FILE *fp;
 	char *command = NULL;
-	char *cmd_cpy = NULL;
 	size_t len = 0;
 	int string;
 	unsigned int count = 0;
@@ -24,12 +23,11 @@ void read_file(char *file_name, stack_t **head)
 
 	while ((string = getline(&command, &len, fp)) != -1)
 	{
-		cmd_cpy = command;
-		cmd_cpy = strtok(cmd_cpy, DELIMIT);
+		command = strtok(command, DELIMIT);
 		count++;
 
 		if (command != NULL)
-			line_interpreter(head, cmd_cpy, count);
+			line_interpreter(head, command, count);
 	}
 
 	free(command);
