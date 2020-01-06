@@ -58,6 +58,7 @@ Utilizing the concepts of stacks and LIFO (Last In, First Out), this repository 
 | File Name | Description |
 | --- | --- |
 |[1000-holberton.bf](https://github.com/Alouie412/monty/blob/master/bf/1000-holberton.bf) | File that prints "Holberton" using Brainfuck code |
+|[1001-add.bf](https://github.com/Alouie412/monty/blob/master/bf/1001-add.bf) | File that adds two integers taken from stdin. Results will only be a single digit integer |
 
 ## Opcode Commands
 
