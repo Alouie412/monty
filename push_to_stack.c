@@ -1,6 +1,28 @@
 #include "monty.h"
 
 /**
+ * digit_checker - Function that checks the entire string for
+ * non-integer characters
+ * @s: The passed in string, strtok'd from push_to_stack
+ * Return: -1 if a non-integer character is found. 0 otherwise
+ */
+int digit_checker(char *s)
+{
+	unsigned int i;
+
+	for (i = 0; i < strlen(s); i++)
+	{
+		if (s[0] == '-')
+			continue;
+
+		if (isdigit(s[i]) != 0)
+			return (-1);
+	}
+
+	return (0);
+}
+
+/**
  * push_to_stack - Function that creates a new linked list node
  * @stack: The stack. Basically, a linked list in stack format
  * @line_num: Line number where the push command was called from the .m file
@@ -19,7 +41,7 @@ void push_to_stack(stack_t **stack, unsigned int line_num)
 	 * in read_file.c, and the static pointer has not changed since
 	 */
 	integer = strtok(NULL, DELIMIT);
-	if (integer == NULL || isdigit(*integer) == 0)
+	if (integer == NULL || digit_checker(integer) == -1)
 	{
 		dprintf(STDERR_FILENO, "L%u: usage: push integer\n", line_num);
 		atexit(free_them_all);

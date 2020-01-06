@@ -50,6 +50,7 @@ void read_file(char *, stack_t **);
 void line_interpreter(stack_t **, char *, unsigned int);
 void free_them_all(void);
 void push_to_stack(stack_t **, unsigned int);
+int digit_checker(char *);
 void print_stack(stack_t **, unsigned int);
 void print_int(stack_t **, unsigned int);
 void Poppin_Party(stack_t **, unsigned int);
