@@ -48,6 +48,7 @@ Utilizing the concepts of stacks and LIFO (Last In, First Out), this repository 
 |[modulo_op.c](https://github.com/Alouie412/monty/blob/master/modulo_op.c) | File that handles the ```mod``` command |
 |[print_char.c](https://github.com/Alouie412/monty/blob/master/print_char.c) | File that handles the ```pchar``` command |
 |[print_string.c](https://github.com/Alouie412/monty/blob/master/print_string.c) | File that handles the ```pstr``` command |
+|[rotate_last.c](https://github.com/Alouie412/monty/blob/master/rotate_last.c) | File that handles the ```rotl``` command |
 
 ## Opcode Commands
 
@@ -66,3 +67,4 @@ Utilizing the concepts of stacks and LIFO (Last In, First Out), this repository 
 | mod | Divides the top element's integer value from the second-from-top element to get the remainder, then removes the top element from the stack. |
 | pchar | Prints the value of the top stack as a character. |
 | pstr | Prints all values of the stack as characters. |
+| rotl | Moves the topmost element to the bottom of the stack. The second-from-top element becomes the new top of stack |
