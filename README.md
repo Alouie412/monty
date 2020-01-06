@@ -9,6 +9,7 @@ Utilizing the concepts of stacks and LIFO (Last In, First Out), this repository 
 * Opens .m file (the standard extension, though not mandatory by Monty)
 * Parses through lines in the given .m file
 * Produces outputs depending on file content
+* **Bonus** Includes code for Brainfuck
 
 ## Requirements
 
@@ -50,6 +51,12 @@ Utilizing the concepts of stacks and LIFO (Last In, First Out), this repository 
 |[print_string.c](https://github.com/Alouie412/monty/blob/master/print_string.c) | File that handles the ```pstr``` command |
 |[rotate_last.c](https://github.com/Alouie412/monty/blob/master/rotate_last.c) | File that handles the ```rotl``` command |
 |[rotate_first.c](https://github.com/Alouie412/monty/blob/master/rotate_first.c) | File that handles the ```rotr``` command |
+
+## Files In BF Directory
+
+| File Name | Description |
+| --- | --- |
+|[1000-holberton.bf](https://github.com/Alouie412/monty/blob/master/bf/1000-holberton.bf) | File that prints "Holberton" using Brainfuck code |
 
 ## Opcode Commands
 
