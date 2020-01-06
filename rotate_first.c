@@ -22,6 +22,6 @@ void rotate_first(stack_t **stack, unsigned int line_num)
 	(*stack)->prev = new_first;
 	new_first->prev = NULL;
 	new_first = (*stack)->next;
-	new_first->next = NULL;
-	*stack = (*stack)->prev;
+	(*stack)->next = NULL;
+	*stack = new_first;
 }
